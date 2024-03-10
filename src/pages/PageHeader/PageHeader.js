@@ -5,7 +5,6 @@ import './PageHeader.css'
 const PageHeader = () => {
   return (
     <div className="pagetitle">
-      <h1>Dashboard</h1>
       <nav>
         <ol className="breadcrumb">
           <li className="breadcrumb-item">

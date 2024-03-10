@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="copyright">
         &copy; Copyright{' '}
         <strong>
-          <span>DStudio Technology</span>
+          <span>Maha Bank</span>
         </strong>
         . All Rights Reserved
       </div>
       <div className="credits">
-        Designed by <a href="#">David</a>
+        Designed by <a href="#">Suthra Developers</a>
       </div>
     </footer>
   );
