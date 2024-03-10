@@ -1,4 +1,36 @@
 /*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 350px;
+  }
+}
+
+.logo img {
+  max-height: 50px;
+  /* border: 1px solid ;
+   */
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #012970;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
@@ -7,7 +39,7 @@
     z-index: 997;
     height: 60px;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    background-color: #fff;
+    background-color: #5F43BB;
     padding-left: 20px;
   }
   
