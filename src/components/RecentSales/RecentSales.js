@@ -11,7 +11,7 @@ const RecentSales = () => {
   const [filter, setFilter] = useState('Today');
   const handleFilterChange = filter => {
     setFilter(filter);
-  };
+  }
 
   // you need intall the json server to run the backend api
   // npm i json-server -g
