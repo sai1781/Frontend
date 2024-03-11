@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "../pages/DashBoard/DashBoard";
 import HomePage from "../pages/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
+import MultiStepForm from "../components/MemberDetailsForm/MemberDetailsForm";
+
 // import Customers from "../../Pages/Customers";
 // import Dashboard from "../../Pages/Dashbaord";
 // import Inventory from "../../Pages/Inventory";
@@ -91,6 +93,7 @@ const AppRouter = () => {
     <Routes>
       <Route  path="/LoginPage" element={ <LoginPage />} />
       <Route path="/Dashboard" element={<HomePage />} />
+      <Route path="/producercompany/application/memberdetails" element={<MultiStepForm />} />
       {/* <Route path="/Dashboard" element={<Dashboard />}></Route>
       <Route path="/inventory" element={<Inventory />}></Route>
       <Route path="/orders" element={<Orders />}></Route>

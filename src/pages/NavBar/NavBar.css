@@ -52,3 +52,9 @@
     color: #012970;
   }
   
+  .d-none.d-lg-block {
+    text-decoration: none;
+}
+span{
+  text-decoration: none;
+}

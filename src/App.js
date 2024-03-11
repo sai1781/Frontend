@@ -14,14 +14,14 @@ import "bootstrap/dist/js/bootstrap.min.js";
 //   Redirect,
 // } from "react-router-dom";
 import LoginPage from "./pages/LoginPage/LoginPage"; // Adjust the path as needed
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from "react-router-dom";
 import Dashboard from "./pages/DashBoard/DashBoard";
 import Footer from "./pages/Footer/Footer";
 import NavBar from "./pages/NavBar/NavBar";
-import SideMenuBar from "./pages/SideMenuBar/SideMenuBar"
+import SideMenuBar from "./pages/SideMenuBar/SideMenuBar";
 import AppRouter from "./AppRouter/AppRouter";
 import HomePage from "./pages/HomePage/HomePage";
-
+import PageHeader from "./pages/PageHeader/PageHeader";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,26 +30,33 @@ const App = () => {
     setIsLoggedIn(true);
   };
 
+  const location = useLocation();
+console.log(location.pathname)
+
   return (
     <div>
       {!isLoggedIn && (
-           <LoginPage onLogin={handleLogin} />
-          // <Routes>
-          //   <Route path="/LoginPage"  ele/>
-          // </Routes>
+        <LoginPage onLogin={handleLogin} />
+        // <Routes>
+        //   <Route path="/LoginPage"  ele/>
+        // </Routes>
       )}
       {isLoggedIn && (
         <>
           <NavBar />
           <SideMenuBar />
-          <AppRouter />
+          <p>Current Route: {location.pathname}</p>
+          <div  id={`${location.pathname === '/Dashboard' ? '':'main' }`} className={`${location.pathname === '/Dashboard' ? '':'main' }`} >
+            <PageHeader text={location.pathname}  />
+            <AppRouter />
+          </div>
           <Footer />
           <BackToTop />
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
 export default App;
 
@@ -67,9 +74,6 @@ export default App;
 // import HomePage from "./pages/HomePage/HomePage";
 // import Footer from "./pages/Footer/Footer";
 // import BackToTop from "./components/BackToTop/BackToTop";
-
-
-
 
 // const App = () => {
 //   return (

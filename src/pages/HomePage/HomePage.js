@@ -6,8 +6,9 @@ import './HomePage.css'
 const HomePage = () => {
   return (
     <div id="main" className="main">
-      <PageHeader />
-      <Dashboard />
+   <PageHeader /> 
+    <Dashboard />
+       {/* <MultiStepForm />  */}
     </div>
   )
 }
