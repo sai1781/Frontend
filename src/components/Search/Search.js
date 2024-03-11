@@ -1,5 +1,5 @@
-import React from 'react';
-import "./Search.css"
+import React from "react";
+import "./Search.css";
 
 const Search = () => {
   return (
@@ -21,6 +21,6 @@ const Search = () => {
       </form>
     </div>
   );
-}
+};
 
 export default Search;

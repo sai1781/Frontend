@@ -2,7 +2,7 @@ import React from 'react';
 import './PageHeader.css'
 
 
-const PageHeader = () => {
+const PageHeader = ({text}) => {
   return (
     <div className="pagetitle">
       <nav>

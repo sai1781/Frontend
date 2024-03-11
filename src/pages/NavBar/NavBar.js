@@ -20,7 +20,8 @@ const NavBar = () => {
       <a  className="logo d-flex align-items-center" onClick={handleToggleSideBar}>
       
         <img src={Logo} alt=""/>
-        <span className="d-none d-lg-block">MAHA CO-OPERATIVE SOCIETY</span>
+        <span className="d-none" >MAHA CO-OPERATIVE SOCIETY</span>
+        {/* <span className="d-none d-lg-block">MAHA CO-OPERATIVE SOCIETY</span> */}
       </a>
      
 
@@ -30,7 +31,7 @@ const NavBar = () => {
       ></i>
     </div>
      
-      <Search />
+      {/* <Search /> */}
       <NavDetails />
     </header>
   )

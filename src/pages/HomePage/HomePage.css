@@ -1,12 +1,12 @@
-#main {
-    margin-top: 60px;
-    padding: 20px 30px;
-    transition: all 0.3s;
+ #main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
   }
-  
-  @media (max-width: 1199px) {
-    #main {
-      padding: 20px;
-    }
-  }
-  
+} 
+  /* // we can use the css according to our requirements and keeping the file commented i add the css inside the app.js */
