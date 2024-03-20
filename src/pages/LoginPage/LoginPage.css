@@ -1,66 +1,87 @@
-.login-container {
-  /* background-image: url('/src/Assests/WhatsApp\ Image\ 2024-03-05\ at\ 11.24.10\ AM.jpeg'); */
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100vh;
-  padding: 200px;
-  box-sizing: border-box;
-  background-size: cover;
-}
-
-h1 {
-  text-align: left;
-  margin-bottom: 20px;
-  color: #268dcb;
-  text-shadow: 0 0 3px #268dcb;
-}
-
-.frm {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  padding-left: 900px;
-  padding-top: 100px;
-}
-
-input {
-  width: 320px;
-  border-radius: 20px;
-}
-
-form {
-  flex-direction: column;
-  width: 300px;
-  padding: 10px;
-  text-align: center;
-}
-label {
-  display: flex;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-input[type="text"],
-input[type="password"] {
-  padding: 10px;
-  border: 1px solid #268dcb;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 3px #268dcb;
-}
-.button-container {
-  text-align: right;
-  padding: 15px;
-}
-.butn {
-  margin-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 10px;
-}
-.butn:hover {
-  font-weight: bolder;
-  background-color: blue;
+.loginbody{
+    background-image: url(../../images/lg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%; 
+  }
+    .heading{
+      margin-top: 0px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .form{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: end;
+      padding-right: 5rem;
+      padding-top: 5rem; 
+    }
+   .loginput{
+      width: 20rem;
+      border-radius: 20px;
+    }
+    .formedit{
+      width: 20rem;
+      padding: 10px;
+    text-align: center; 
+    }
+    label {
+      display: flex;
+      margin-bottom: 10px;
+      font-weight:400;
+    }
+    .loginput[type="text"],
+    .loginput[type="password"] {
+      padding: 10px;
+      border-radius: 7px;
+      margin-bottom: 10px;
+    }
+    .button-container {
+    text-align: right;
+    padding: 15px;
+    }
+     .button{ 
+      margin-top: 20px;
+      width:20rem;
+      padding: 10px;
+      border-radius: 2rem;
+      box-shadow: 2px 2px 5px  rgba(0,0,0,0.5);  
+    }
+    .button:active{
+      background-color: rgb(13, 111, 13) !important;
+    }
+    .button:hover{
+      font-weight: bolder;
+      background-color: blue;
+    }
+      @media screen and (max-width: 1200px) {
+      .loginbody{
+          background-image: url(../../images/lg2.jpg);
+          background-size:cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+          width: 100%; 
+        }
+        .form{
+           display: flex;
+           justify-content: center;   
+           text-align: center;
+           padding-left: 1px;
+           padding-right: 0px;
+            
+          }  
+          .loginput{
+            width: 17rem;
+          }
+          .button{ 
+            width:17rem;
+          }
+        .formedit{
+          flex-direction: column;
+          width: 280px;
+          padding: 15px;
+        text-align: center;
+  }
 }

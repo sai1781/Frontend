@@ -1,0 +1,26 @@
+.firstImage{
+    /* border: 1px solid green; */
+    width: 15rem;
+    height: 15rem;
+}
+.withdrawImage{
+    width: 12rem;
+    height: 12rem;
+}
+.ImageContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+}
+.firstImageText{
+    color: black;
+    font-weight: 600;
+}
+
+.radioContainer{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    gap: 1rem;
+}

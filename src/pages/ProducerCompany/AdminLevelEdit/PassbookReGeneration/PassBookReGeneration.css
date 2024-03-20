@@ -1,0 +1,76 @@
+.pat{
+    margin: 50px;
+    border: 2px solid;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    background-color: white;
+}
+.frmr{
+    margin:100px;
+    margin-left: 500px;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+   
+
+}
+
+.dd{
+    margin-left: 400px;
+   
+}
+
+.mm{
+    width: 300px;
+}
+
+.eerr{
+    margin: 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin-left: 400px;
+    background-color: white;
+}
+
+.ddff{
+    margin-top: 20px;
+    justify-content: space-between;
+    /* background-color: white; */
+}
+
+.fmrm{
+    margin-top: 20px;
+}
+
+.buttn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.btt{
+    margin-bottom: 20px;
+}
+.fmm{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.buttonOrange{
+    background-color: #E47B25;
+    color: white;
+    border-radius: 9px;
+}
+.buttonBlue{
+    background-color: #268DCB;
+    border-color: #268DCB;
+    border-radius: 10px;
+}

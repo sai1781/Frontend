@@ -1,0 +1,111 @@
+.pat{
+    margin: 50px;
+    border: 2px solid;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    background-color: white;
+}
+.frmr{
+    margin:100px;
+    margin-left: 500px;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.dd{
+    margin-left: 400px;
+}
+
+.mm{
+    width: 300px;
+}
+
+.eerr{
+    margin: 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin-left: 400px;
+    background-color: white;
+}
+
+.ddff{
+    margin-top: 20px;
+    justify-content: space-between;
+    /* background-color: white; */
+}
+
+.fmrm{
+    margin-top: 20px;
+}
+
+.buttn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.btt{
+    margin-bottom: 20px;
+}
+.fmm{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.InputContainer{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.InputLabel{
+    margin-right: 10px;
+}
+.DateInput{
+    width: 100%;
+  padding: 8px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.IconContainer{
+    position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.containerStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.boxStyle{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px blue;
+}
+.buttonBlue{
+    margin-right: 10px; 
+    background-color: #268DCB;
+    color: white; 
+    border-radius: 9px;
+    border-color: #268DCB;
+    border-radius: 10px;
+}
+.buttonOrange{
+    margin-right: 10px; 
+    background-color: #E47B25;
+    color: white; 
+    border-radius: 10px;
+    border-color: #E47B25;
+}

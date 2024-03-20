@@ -1,0 +1,9 @@
+.text-color{
+    color: #E47B25;
+    text-align: center;
+  }
+.bg-color {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom:15px;
+}

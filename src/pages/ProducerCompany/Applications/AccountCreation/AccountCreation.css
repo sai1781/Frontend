@@ -1,0 +1,40 @@
+.text{
+    color: #f98614 !important;
+    /* border: 2px solid green; */
+    border: none !important;
+    font-size: 2rem !important;
+}
+.accountContainer{
+    /* border: 2px solid green; */
+    background-color: white;
+    
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    justify-content: center;
+    justify-self: center;
+   
+}
+.Accordion{
+    width:100%;
+}
+.Datepicker{
+    width:100%;
+    height:100%;
+}
+.buttonOrange{
+    background-color: #E47B25;
+    color: white;
+    border-radius: 9px;
+}
+.buttonBlue{
+    background-color: #268DCB;
+    border-color: #268DCB;
+    border-radius: 10px;
+}
+/* style={{ marginTop: 0, height: '36px' }} */

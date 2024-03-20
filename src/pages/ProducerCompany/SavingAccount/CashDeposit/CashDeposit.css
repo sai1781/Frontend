@@ -1,0 +1,255 @@
+.cashDepositContainer {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  background-color: white ;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+/* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); */
+  align-content: center;
+  padding: 1rem;
+}
+/* .row{
+display: flex;
+justify-content: start;
+gap: 20px;
+}
+.InputContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.InputLabel{
+  margin-bottom:  5px;
+} */
+.memberdetailcontainer{
+  margin-top: 20px;
+  background-color: white ;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    align-content: center;
+  padding: 1rem;
+  }
+  .date{
+    width: 100%;
+  }
+.headertext{
+  color: #E47B25 !important;
+}
+.Text{
+  color: #E47B25 !important;
+}
+.input{
+ width: 100%;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  display: flex;
+  gap: 2rem;
+  margin-left: 20px;
+}
+
+.checkboxContainer input[type="radio"] {
+  display: none;
+}
+
+.checkboxContainer label {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkboxContainer label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #268dcb;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.text {
+  border: 3px solid red;
+}
+
+legend {
+  color: black;
+  font-weight: 500;
+}
+h3 {
+  color: #f98614;
+}
+h4{
+  color: #268dcb;
+}
+.headerText {
+  color: #f98614 !important;
+  /* border: 2px solid green; */
+  border: none !important;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+.cardbody{
+  justify-content: center;
+  /* text-align: center; */
+  
+}
+.headerCashDeposit {
+  /* display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 3px 3px 10px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  align-content: center;
+  align-items: center !important; */
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  
+  
+  
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 20px;
+
+} 
+.data{
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+legend{
+  color: black;
+  font-weight: 900;
+  /* font-size: 20px; */
+
+}
+.headerCashDeposit1 {
+  width: 50%;
+  align-items: center;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* border: 2px solid red; */
+}
+
+td{
+  /* border: 2px solid red  ; */
+  align-items: center;
+  align-content: center;
+  color: black;
+ 
+}
+.headerCashDeposit2 {
+  width: 50%;
+}
+
+.checkboxContainer input[type="radio"]:checked + label:before {
+  background-color: #268dcb;
+}
+
+.checkboxContainer label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input[type="radio"]:checked + label:after {
+  display: block;
+}
+
+.checkboxContainer label:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.InputContainer{
+  margin-top: 20px;
+text-align: left;
+display: flex;
+align-items: center;
+width:100%;
+}
+.InputLabel{
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.DropdownInput{
+  width: 35.5rem;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.table{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.TableCellStyle{
+  border: 1px solid #787777;
+  text-align: center;
+  
+  padding: 8px;
+}
+h2{
+  color:#268dcb;
+}
+.thead-light{
+  width: 100%;
+}
+.Entries{
+  margin-top: 20px;
+  background-color: white ;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    align-content: center;
+  padding: 1rem;
+}
+input{
+border: 1px solid;
+}
+.PaymentDetails{
+background-color:white;
+box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+font-family: Averia Serif Libre;
+margin: auto;
+margin-top: 5vh;
+width: 90%;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+.buttonOrange{
+
+  background-color: #E47B25;;
+  height: 35px;
+  width: 145px;
+
+}
+.buttonBlue{
+background-color: #268DCB;
+height: 35px;
+width: 145px;
+}
+.button{
+text-align: center;
+}

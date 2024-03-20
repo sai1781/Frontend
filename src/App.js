@@ -19,19 +19,18 @@ import Dashboard from "./pages/DashBoard/DashBoard";
 import Footer from "./pages/Footer/Footer";
 import NavBar from "./pages/NavBar/NavBar";
 import SideMenuBar from "./pages/SideMenuBar/SideMenuBar";
-import AppRouter from "./AppRouter/AppRouter";
 import HomePage from "./pages/HomePage/HomePage";
 import PageHeader from "./pages/PageHeader/PageHeader";
+import AppRoutes from "./components/AppRoutes/AppRoutes";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = () => {
-    // You can set isLoggedIn to true here after successful login
     setIsLoggedIn(true);
   };
 
   const location = useLocation();
-console.log(location.pathname)
+  console.log(location.pathname);
 
   return (
     <div>
@@ -46,17 +45,20 @@ console.log(location.pathname)
           <NavBar />
           <SideMenuBar />
           <p>Current Route: {location.pathname}</p>
-          <div  id={`${location.pathname === '/Dashboard' ? '':'main' }`} className={`${location.pathname === '/Dashboard' ? '':'main' }`} >
-            <PageHeader text={location.pathname}  />
-            <AppRouter />
+          <div
+            id={`${location.pathname === "/Dashboard" ? "" : "main"}`}
+            className={`${location.pathname === "/Dashboard" ? "" : "main"}`}
+          >
+            <PageHeader text={location.pathname} />
+            <AppRoutes />
           </div>
           <Footer />
           <BackToTop />
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default App;
 

@@ -1,0 +1,34 @@
+h4{
+    color: #E47B25;
+}
+.Form{
+    width: 100%; 
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.DatePicker{
+    width:100%;
+}
+.Select{
+    width:100%;
+}
+.Input{
+    height:35px;
+    width:100%;
+}
+.InputTextArea{
+    height: 100px;
+    width: 100%;
+}
+.buttonOrange{
+    background-color: #E47B25;
+    color: white;
+    border-radius: 9px;
+}
+.buttonBlue{
+    background-color: #268DCB;
+    border-color: #268DCB;
+    border-radius: 10px;
+}

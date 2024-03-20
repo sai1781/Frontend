@@ -1,10 +1,10 @@
-import React from 'react';
-import './SideMenuBar.css';
-import navList from '../../data/navItem'
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import "./SideMenuBar.css";
+import navList from "../../data/navItem";
+import { useNavigate } from "react-router-dom";
 
 const SideMenuBar = () => {
-    const navigate = useNavigate() ; 
+  const navigate = useNavigate();
   return (
     <aside id="sidebar" className="sidebar">
       <ul className="sidebar-nav" id="sidebar-nav">
@@ -14,8 +14,6 @@ const SideMenuBar = () => {
             <span>Dashboard</span>
           </a>
         </li>
-
-{/* Admin */}
         <li className="nav-item">
           <a
             className="nav-link collapsed"
@@ -23,7 +21,6 @@ const SideMenuBar = () => {
             data-bs-toggle="collapse"
             href="#"
           >
-            
             <i className="bi bi-menu-button-wide"></i>
             <span>Admin</span>
             <i className="bi bi-chevron-down ms-auto"></i>
@@ -50,36 +47,30 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
-                    className="nav-link collapsed"
-                    data-bs-target="#customers-nav"
-                    data-bs-toggle="collapse"
-                    href="#">
+                  <a onClick={() => navigate("/Admin/Application/UserRight")}>
                     <i className="bi bi-circle"></i>
                     <span>User Right</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate('/Form')}>
+                  <a onClick={() => navigate("/Admin/Application/DateLock")}>
                     <i className="bi bi-circle"></i>
                     <span>Data Lock</span>
                   </a>
                 </li>
               </ul>
             </li>
-           
           </ul>
         </li>
 
-{/* Producer Company */}
-     <li className="nav-item">
-          <a  onClick={() => navigate('/producercompany')}
+        {/* Producer Company */}
+        <li className="nav-item">
+          <a
+            // onClick={() => navigate("/producercompany")}
             className="nav-link collapsed"
             data-bs-target="#producercompany-nav"
             data-bs-toggle="collapse"
-           
           >
-            
             <i className="bi bi-menu-button-wide"></i>
             <span>Producer Company</span>
             <i className="bi bi-chevron-down ms-auto"></i>
@@ -91,7 +82,7 @@ const SideMenuBar = () => {
           >
             <li className="nav-item">
               <a
-              onClick={() => navigate('/producercompany/application')}
+               // onClick={() => navigate("/producercompany/application")}
                 className="nav-link collapsed"
                 data-bs-target="#applications-nav"
                 data-bs-toggle="collapse"
@@ -107,42 +98,46 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/application/memberdetails')}
-                    
-                    >
+                    onClick={() =>
+                      navigate("/ProducerCompany/Applications/MemberDetails")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Member Details</span>
                   </a>
                 </li>
                 <li>
-                  <a 
-                  onClick={() => navigate("/producercompany/application/sharecapital")}
+                  <a
+                    onClick={() =>
+                      navigate("/ProducerCompany/Applications/ShareCapital")
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Share Capital</span>
                   </a>
                 </li>
                 <li>
-                  <a  
-                   onClick={() => navigate("/producercompany/application/accountcreation")}
-                    >
+                  <a
+                    onClick={() =>
+                      navigate("/ProducerCompany/Applications/AccountCreation")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Account Creation</span>
                   </a>
                 </li>
               </ul>
             </li>
-            
+
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#receipts-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/producercompany/receipts/withdrawal')}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Receipts/Withdrawal</span>
@@ -154,32 +149,39 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/receipts/withdrawal')}
-                    
-                    >
+                    onClick={() =>
+                      navigate("/ProducerCompany/Receipts/Withdrawl/Receipts")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
-                    <span onClick={() => navigate('/producercompany/receipts/withdrawal/receipts')}>Receipts</span>
+                    <span>Receipts</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate('/producercompany/receipts/withdrawal/passbookcancellation')}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompany/Receipts/Withdrawl/PassbookCancellation"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Passbook Cancellation</span>
                   </a>
                 </li>
               </ul>
             </li>
-           
+
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#adminleveledit-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/producercompany/adminleveledit')}
+                //onClick={() => navigate("/producercompany/adminleveledit")}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Admin Level Edit</span>
@@ -191,33 +193,46 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/adminleveledit/passbookregenration')}
-                    
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompany/AdminLevelEdit/PassbookRegeneration"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Passbook Regenaration</span>
                   </a>
                 </li>
                 <li>
-                  <a 
-                onClick={() => navigate('/producercompany/adminleveledit/memberedit')}
+                  <a
+                    onClick={() =>
+                      navigate("/ProducerCompany/AdminLevelEdit/MemberEdit")
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Member Edit</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate('/producercompany/adminleveledit/changepassword')} >
+                  <a
+                    onClick={() =>
+                      navigate("/ProducerCompany/AdminLevelEdit/ChangePassword")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Change Password</span>
                   </a>
                 </li>
                 <li>
-                  <a  onClick={() => navigate('/producercompany/adminleveledit/recepitdelete')}>
+                  <a
+                    onClick={() =>
+                      navigate("/ProducerCompany/AdminLevelEdit/ReceiptDelete")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Recepit Delete</span>
                   </a>
@@ -225,15 +240,12 @@ const SideMenuBar = () => {
               </ul>
             </li>
 
-
-
-
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#collectionreports-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/producercompany/Collectionreports')}
+               // onClick={() => navigate("/producercompany/Collectionreports")}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Collection Reports</span>
@@ -245,28 +257,29 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/Collectionreports/paymentandreceiptsdetails')}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompany/CollectionReports/PaymentAndReceiptDetails"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Payment and Recepit Details</span>
                   </a>
                 </li>
-              
               </ul>
             </li>
-
 
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#savingaccount-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/producercompany/savingaccounts')}
-                >
+              >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Savings Account</span>
                 <i className="bi bi-chevron-down ms-auto"></i>
@@ -277,31 +290,33 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/savingaccounts/cashdeposit')}
-                    >
+                    onClick={() =>
+                      navigate("/ProducerCompany/SavingsAccount/CashDeposit")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Cash Deposit</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/savingaccounts/cashwithdraw')}
-                    >
+                    onClick={() =>
+                      navigate("/ProducerCompany/SavingsAccount/Withdraw")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Cash Withdraw</span>
                   </a>
                 </li>
-              
               </ul>
             </li>
-
 
             {/* <li className="nav-item">
               <a
@@ -334,13 +349,12 @@ const SideMenuBar = () => {
               </ul>
             </li> */}
 
-
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#groupentry-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/producercompany/groupentry')}
+              //  onClick={() => navigate("/producercompany/groupentry")}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Group Entry </span>
@@ -352,36 +366,61 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/producercompany/groupentry/groupentry')}
-                    >
+                    onClick={() =>
+                      navigate("/ProducerCompany/GroupEntry/GroupEntry")
+                    }>
                     <i className="bi bi-circle"></i>
                     <span>Group Entry</span>
                   </a>
                 </li>
-                
-              
               </ul>
             </li>
 
-
-
-
+            <li className="nav-item">
+              <a
+                className="nav-link collapsed"
+                data-bs-target="#groupentry-nav"
+                data-bs-toggle="collapse"
+                // onClick={() => navigate("/producercompany/groupentry")}
+              >
+                <i className="bi bi-menu-button-wide"></i>
+                <span>Reports </span>
+                <i className="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul
+                id="groupentry-nav"
+                className="nav-subcontent collapse"
+                data-bs-parent="#admin-nav"
+              >
+                <li>
+                  <a
+                    className="nav-link collapsed"
+                    data-bs-target="#customers-nav"
+                    data-bs-toggle="collapse"
+                    onClick={() =>
+                      navigate("/ProducerCompany/Reports/Passbook")
+                    }>
+                    <i className="bi bi-circle"></i>
+                    <span>Passbook</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
 
-{/* Producer company reports */}
-    <li className="nav-item">
+        {/* Producer company reports */}
+        <li className="nav-item">
           <a
             className="nav-link collapsed"
             data-bs-target="#companyreports-nav"
             data-bs-toggle="collapse"
-            onClick={(()=> navigate('/producercompanyreports'))}
+            // onClick={() => navigate("/producercompanyreports")}
           >
-            
             <i className="bi bi-menu-button-wide"></i>
             <span>Producer Company Reports</span>
             <i className="bi bi-chevron-down ms-auto"></i>
@@ -396,7 +435,6 @@ const SideMenuBar = () => {
                 className="nav-link collapsed"
                 data-bs-target="#memberreports-nav"
                 data-bs-toggle="collapse"
-                onClick={(()=> navigate('/producercompanyreports/memberreports'))}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Member Reports</span>
@@ -408,66 +446,89 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={(()=> navigate('/producercompanyreports/memberreports/memberwisedetailsreports'))}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/MemberReports/MemberWiseDetailsReports"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Member Wise Details Reports</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('/producercompanyreports/memberreports/memberdetailsreports'))}
-                  
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/MemberReports/MemberDetailsReports"
+                      )
+                    }
                   >
                     <i className="bi bi-circle"></i>
-                    <span>Member  Details Reports</span>
+                    <span>Member Details Reports</span>
                   </a>
                 </li>
 
                 <li>
-                  <a onClick={(()=> navigate('/producercompanyreports/memberreports/memberdetailssearch'))}
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/MemberReports/MemberDetailsSearch"
+                      )
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Member Details Search</span>
                   </a>
                 </li>
                 <li>
-                  <a 
-                  onClick={(()=> navigate('/producercompanyreports/memberreports/groupdetailsreports'))}
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/MemberReports/GroupDetailsReports"
+                      )
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Group Details Reports</span>
                   </a>
                 </li>
                 <li>
-                  <a 
-                  onClick={(()=> navigate('/producercompanyreports/memberreports/memberaccountstatement'))}
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/MemberReports/MemberAccountStatement"
+                      )
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Member Account Statement</span>
                   </a>
                 </li>
                 <li>
-                  <a 
-                  onClick={(()=> navigate('/producercompanyreports/memberreports/passbookcancellation'))}
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/producercompanyreports/memberreports/passbookcancellation"
+                      )
+                    }
                   >
                     <i className="bi bi-circle"></i>
                     <span>Passbook Cancellation</span>
                   </a>
                 </li>
-
               </ul>
             </li>
-            
+
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#depositreports-nav"
                 data-bs-toggle="collapse"
-                onClick={(()=> navigate('/producercompanyreports/depositreports/savingaccountstatement'))}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Deposit Reports</span>
@@ -479,31 +540,52 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={(()=> navigate('/producercompanyreports/depositreports/deposit&withdrawaldetails'))}
-                    
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/DepositReports/SavingAccountStatement"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Saving Account Statement</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('/producercompanyreports/depositreports/savingwithdrawaldetails'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/DepositReports/Deposit&WithdrawalDetails"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Deposit & Withdrawal Details</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('/producercompanyreports/depositreports/receiptsdeletereports'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/DepositReports/SavingsOrShareWithdrawalDetails"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Savings Withdrawal Details</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/DepositReports/ReceiptsDeleteReports"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Recepits Delete Report</span>
                   </a>
@@ -516,7 +598,6 @@ const SideMenuBar = () => {
                 className="nav-link collapsed"
                 data-bs-target="#collectionreport-nav"
                 data-bs-toggle="collapse"
-                onClick={(()=> navigate('/producercompanyreports/collectionreport'))}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Collection Report</span>
@@ -528,38 +609,33 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={(()=> navigate('/producercompanyreports/collectionreport/dayclosingreport'))}
-                    
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/ProducerCompanyReports/DepositReports/DayClosingReport"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Day Closing Report</span>
                   </a>
                 </li>
-                
               </ul>
             </li>
-
-
-
-
-
-
           </ul>
         </li>
 
-{/* financial accounting */}
-<li className="nav-item">
+        {/* financial accounting */}
+        <li className="nav-item">
           <a
             className="nav-link collapsed"
             data-bs-target="#finanicalaccounting-nav"
             data-bs-toggle="collapse"
-            onClick={(()=> navigate('financialaccounting'))}
+            // onClick={() => navigate("financialaccounting")}
           >
-            
             <i className="bi bi-menu-button-wide"></i>
             <span>Financial Accounting</span>
             <i className="bi bi-chevron-down ms-auto"></i>
@@ -574,7 +650,9 @@ const SideMenuBar = () => {
                 className="nav-link collapsed"
                 data-bs-target="#financialmasters-nav"
                 data-bs-toggle="collapse"
-                onClick={(()=> navigate('financialaccounting/financialmasters'))}
+                // onClick={() =>
+                //   navigate("/FinancialAccounting/FinancialMasters")
+                // }
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Financial Masters</span>
@@ -586,37 +664,55 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={(()=> navigate('financialaccounting/financialmasters/bankinformation'))}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialMasters/BankInformation"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Bank Information</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialmasters/checkmanagement'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialMasters/CheckManagement"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Check Management</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialmasters/employeeinformation'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialMasters/EmployeeInfo"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Employee Information</span>
                   </a>
                 </li>
               </ul>
             </li>
-           
+
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#financialtransactions-nav"
                 data-bs-toggle="collapse"
-                onClick={(()=> navigate('financialaccounting/financialtranscations'))}
+                // onClick={() =>
+                //   navigate("FinancialAccounting/FinancialTranscations")
+                // }
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Financial Transactions</span>
@@ -628,37 +724,64 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={(()=> navigate('financialaccounting/financialtranscations/generalrecepit'))}
-                    
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialTransactions/GeneralRecepit"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>General Recepit</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialtranscations/bankentries'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialTransactions/BankEntries"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Bank Entries</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialtranscations/chequeonhand'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialTransactions/ChequesOnHand"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Cheques On Hand</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialtranscations/chequeinbank'))}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialTransactions/ChecksInBank"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Checks In Bank</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={(()=> navigate('financialaccounting/financialtranscations/chequesissued'))} >
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/FinancialAccounting/FinancialTransactions/ChequesIssued"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Cheques Issued</span>
                   </a>
@@ -671,7 +794,9 @@ const SideMenuBar = () => {
                 className="nav-link collapsed"
                 data-bs-target="#customers-nav"
                 data-bs-toggle="collapse"
-                href="#"
+                // onClick={() =>
+                //   navigate("/FinancialAccounting/FinancialReports")
+                // }
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>financial Reports</span>
@@ -683,11 +808,12 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    href="#">
+                    href="#"
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Account Ledger</span>
                   </a>
@@ -760,28 +886,16 @@ const SideMenuBar = () => {
                 </li>
               </ul>
             </li>
-           
-
-
-
-
-
-
-
-
-
-
-
           </ul>
         </li>
 
-{/* Analytical Reports */}
-<li className="nav-item">
+        {/* Analytical Reports */}
+        <li className="nav-item">
           <a
             className="nav-link collapsed"
             data-bs-target="#analyticalreports-nav"
             data-bs-toggle="collapse"
-            onClick={() => navigate('/analyticalreports')}
+            onClick={() => navigate("/analyticalreports")}
           >
             <i className="bi bi-menu-button-wide"></i>
             <span>Analytical Reports</span>
@@ -797,7 +911,7 @@ const SideMenuBar = () => {
                 className="nav-link collapsed"
                 data-bs-target="#msireports-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/analyticalreports/msireports')}
+                onClick={() => navigate("/AnalyticalReports/MsiReports")}
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>MSI Reports</span>
@@ -809,64 +923,78 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/msireports/trailbalance')}
-                    >
+                    onClick={() =>
+                      navigate("/AnalyticalReports/MsiReports/TrailBalance")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Trail Balance</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/msireports/comparisontb')}
-                    >
+                    onClick={() =>
+                      navigate("/AnalyticalReports/MsiReports/ComparisonTb")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Comparison TB</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/msireports/scheduletb')}
-                    >
+                    onClick={() =>
+                      navigate("/AnalyticalReports/MsiReports/ScheduleTb")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Schedule TB</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/msireports/balancesheet')}
-                    >
+                    onClick={() =>
+                      navigate("/AnalyticalReports/MsiReports/BalanceSheet")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Balance Sheet</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate('/analyticalreports/msireports/profit&loss')}>
+                  <a
+                    onClick={() =>
+                      navigate("/AnalyticalReports/MsiReports/ProfitAndLoss")
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Profit & loss</span>
                   </a>
                 </li>
               </ul>
             </li>
-           
+
             <li className="nav-item">
               <a
                 className="nav-link collapsed"
                 data-bs-target="#consolidatedreports-nav"
                 data-bs-toggle="collapse"
-                onClick={() => navigate('/analyticalreports/consolidatedreports')}
+                onClick={() =>
+                  navigate("/AnalyticalReports/ConsolidatedReports")
+                }
               >
                 <i className="bi bi-menu-button-wide"></i>
                 <span>Consolidated Reports</span>
@@ -878,63 +1006,81 @@ const SideMenuBar = () => {
                 data-bs-parent="#admin-nav"
               >
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/consolidatedreports/trialbalance')}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/AnalyticalReports/ConsolidatedReports/TrailBalance"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Trail Balance</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/consolidatedreports/comparisontb')}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/AnalyticalReports/ConsolidatedReports/ComparisonTb"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Comparison TB</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/consolidatedreports/scheduletb')}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/AnalyticalReports/ConsolidatedReports/ScheduleTb"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Schedule TB</span>
                   </a>
                 </li>
                 <li>
-                  <a 
+                  <a
                     className="nav-link collapsed"
                     data-bs-target="#customers-nav"
                     data-bs-toggle="collapse"
-                    onClick={() => navigate('/analyticalreports/consolidatedreports/balancesheet')}
-                    >
+                    onClick={() =>
+                      navigate(
+                        "/AnalyticalReports/ConsolidatedReports/BalanceSheet"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Balance Sheet</span>
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => navigate('/analyticalreports/consolidatedreports/profit&loss')}>
+                  <a
+                    onClick={() =>
+                      navigate(
+                        "/AnalyticalReports/ConsolidatedReports/ProfitAndLoss"
+                      )
+                    }
+                  >
                     <i className="bi bi-circle"></i>
                     <span>Profit & loss</span>
                   </a>
                 </li>
               </ul>
             </li>
-
-
-
           </ul>
         </li>
-
 
         {/* Add other menu items as needed */}
 
@@ -950,6 +1096,6 @@ const SideMenuBar = () => {
       </ul>
     </aside>
   );
-}
+};
 
 export default SideMenuBar;

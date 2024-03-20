@@ -3,6 +3,7 @@
     font-size: 14px;
     transition: all 0.3s;
     border-top: 1px solid #cddfff;
+    position: relative;
   }
   
   .footer .copyright {
@@ -19,4 +20,21 @@
   span{
     display: block;
   }
-  
+  .Address{
+    color:rgb(243, 226, 226);
+    font-family: roboto; 
+    font-size: 14px;
+  }
+  .style1 {
+    background-color:black;
+    border-top: 10px solid green;
+  }
+  .style2{
+    color:rgb(243, 226, 226);font-family: roboto; font-size: 14px;
+  }
+  /* .footer_bgcolor{
+    background-color: black;
+  } */
+  .style4{
+    color: black;
+  }

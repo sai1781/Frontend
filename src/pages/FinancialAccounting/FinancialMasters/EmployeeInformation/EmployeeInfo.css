@@ -1,0 +1,20 @@
+#text{
+    color: #E47B25;
+    font-size: 32px;
+}
+.btn2{
+    /* float: right; */
+    background-color: #E47B25;
+    color: white;
+    height: "35px";
+     width: "145px";
+    }
+.btn1{
+        float: right;
+        background-color: #268DCB;
+        color: white;
+         text-align: right;
+         height: "35px";
+         width: "145px";
+        
+        }

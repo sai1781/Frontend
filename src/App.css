@@ -34,12 +34,8 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
+  /* color: orange; */
 }
-
-/*--------------------------------------------------------------
-# Override some default Bootstrap stylings
---------------------------------------------------------------*/
-/* Dropdown menus */
 .dropdown-menu {
   border-radius: 4px;
   padding: 10px 0;
@@ -52,14 +48,12 @@ h6 {
   border: 0;
   box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
 }
-
 .dropdown-menu .dropdown-header,
 .dropdown-menu .dropdown-footer {
   text-align: center;
   font-size: 15px;
   padding: 10px 25px;
 }
-
 .dropdown-menu .dropdown-footer a {
   color: #444444;
   text-decoration: underline;
@@ -169,7 +163,6 @@ h6 {
   border-color: #d3d3d4;
 }
 
-/* Card */
 .card {
   margin-bottom: 30px;
   border: none;
@@ -208,14 +201,12 @@ h6 {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Alerts */
 .alert-heading {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
 
-/* Close Button */
 .btn-close {
   background-size: 25%;
 }
@@ -225,7 +216,6 @@ h6 {
   box-shadow: none;
 }
 
-/* Accordion */
 .accordion-item {
   border: 1px solid #ebeef4;
 }
@@ -257,7 +247,6 @@ h6 {
   font-size: 15px;
 }
 
-/* Breadcrumbs */
 .breadcrumb {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
@@ -283,7 +272,6 @@ h6 {
   font-weight: 600;
 }
 
-/* Bordered Tabs */
 .nav-tabs-bordered {
   border-bottom: 2px solid #ebeef4;
 }
@@ -316,3 +304,5 @@ h6 {
     padding: 20px;
   }
 }
+
+

@@ -15,7 +15,7 @@ import TopSelling from '../../components/TopSelling/TopSelling';
 import RecentSales from '../../components/RecentSales/RecentSales';
 
 
-const Dashboard = () => {
+const DashBoard = () => {
   return (
     <section className="section dashboard">
       <div className="row">
@@ -44,4 +44,4 @@ const Dashboard = () => {
   );
 }
 
-export default Dashboard;
+export default DashBoard;
